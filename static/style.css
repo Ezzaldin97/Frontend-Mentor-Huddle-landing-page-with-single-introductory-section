@@ -1,0 +1,185 @@
+/**
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Violet: hsl(257, 40%, 49%)
+- Soft Magenta: hsl(300, 69%, 71%)
+
+## Typography
+
+### Headings
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 600
+
+### Body
+
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400
+
+## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com/)
+- [IcoMoon](https://icomoon.io/)
+- [Ionicons](https://ionicons.com/)
+**/
+body{
+  padding: 20px 30px 20px 30px;
+  background: url('C:/Users/Ezzaldin Mamdouh/Desktop/free codecamp web design/frontend mentor project/huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg') no-repeat, hsl(257, 40%, 49%);
+}
+header img{
+  width: 163.97px;
+}
+#container{
+  display: grid;
+  grid-template-columns: 50% 45%;
+  grid-column-gap: 5%;
+  margin-top: 60px;
+}
+#container #img img{
+  width: 609px;
+  height: 406px;
+  /**margin-left: 20px;**/
+}
+#container #article-content h1{
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+#container #article-content p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+#container #article-content button{
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: hsl(257, 40%, 49%);
+  width: 150px;
+  height: 40px;
+  outline: none;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+#container #article-content button:hover{
+  border: 1px solid hsl(300, 69%, 71%);
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
+}
+#footer button{
+  float: right;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-color: hsl(257, 40%, 49%);
+  outline: none;
+  padding: 5px 10px 5px 10px;
+  margin : 5px;
+}
+#footer button:hover{
+  border: 1px solid hsl(300, 69%, 71%);
+}
+#footer button i{
+  font-weight: 200;
+  font-size: 20px;
+  color: #fff;
+}
+#footer button i:hover{
+  color:  hsl(300, 69%, 71%);
+}
+@media (max-width: 1220px) and (min-width: 380px){
+  body{
+    background: url('C:/Users/Ezzaldin Mamdouh/Desktop/free codecamp web design/frontend mentor project/huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg') no-repeat, hsl(257, 40%, 49%);
+  }
+  header img{
+    width: 123.97px;
+  }
+  #container{
+    display: block;
+    margin-top: 60px;
+    width: 80%;
+    margin: 60px auto 60px auto;
+    text-align: center;
+  }
+  #container #img img{
+    display: block;
+    width: 456.75px;
+    max-width: 100%;
+    height: 304px;
+    max-height: 100%;
+    max-height: 100%;
+    margin: auto auto 40px auto;
+  }
+  #container #article-content h1{
+    font-size: 25px;
+  }
+  #container #article-content p{
+    font-size: 14px;
+  }
+  #container #article-content button{
+    width: 170px;
+  }
+  #footer{
+    text-align: center;
+  }
+  #footer button{
+    float: none;
+  }
+  #footer button i{
+    font-size: 14px;
+  }
+}
+@media (max-width: 380px){
+  body{
+    background: url('C:/Users/Ezzaldin Mamdouh/Desktop/free codecamp web design/frontend mentor project/huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg') no-repeat, hsl(257, 40%, 49%);
+  }
+  header img{
+    width: 123.97px;
+  }
+  #container{
+    display: block;
+    margin-top: 60px;
+    width: 100%;
+    margin: 60px auto 60px auto;
+    text-align: center;
+  }
+  #container #img img{
+    display: block;
+    width: 304.5px;
+    max-width: 100%;
+    height: 203px;
+    max-height: 100%;
+    max-height: 100%;
+    margin: auto auto 40px auto;
+  }
+  #container #article-content h1{
+    font-size: 20px;
+  }
+  #container #article-content p{
+    font-size: 12px;
+  }
+  #container #article-content button{
+    width: 170px;
+  }
+  #footer{
+    text-align: center;
+  }
+  #footer button{
+    float: none;
+  }
+  #footer button i{
+    font-size: 14px;
+  }
+}
